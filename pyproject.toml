@@ -1,16 +1,18 @@
 [tool.poetry]
-name = "application"
+name = "database_gui"
 version = "0.1.0"
 description = ""
 authors = ["Name Surname <email@domain.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+PyQt5 = "^5.15.7"
+psycopg2 = "^2.9.4"
 
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-application = "application.__main__:main"
+database_gui = "database_gui.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
